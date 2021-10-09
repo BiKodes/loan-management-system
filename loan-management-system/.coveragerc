@@ -1,0 +1,10 @@
+[run]
+branch = True
+omit = *migrations*,
+       *urls*,
+       *test*,
+       *admin*,
+       ./manage.py,
+       ./loan-management-system/config/*,
+       ./loan-management-system/wsgi.py,
+       *__init__*
