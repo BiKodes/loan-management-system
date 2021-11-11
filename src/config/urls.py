@@ -6,10 +6,14 @@ from django.views.generic.base import RedirectView
 from rest_framework.routers import DefaultRouter
 from rest_framework.authtoken import views
 from src.users.views import UserViewSet, UserCreateViewSet
+# from src.loans.api.views import LoanViewsSet
+
 
 router = DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'users', UserCreateViewSet)
+# register loan viewset
+# router.register(r'loans', LoanViewsSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
